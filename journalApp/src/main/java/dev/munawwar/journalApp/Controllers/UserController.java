@@ -18,11 +18,13 @@ public class UserController {
 
     @GetMapping
     public List<User> findAll(){
+
         return userService.findAll();
     }
 
     @PostMapping
     public String saveUser(@RequestBody User user){
+
         return userService.saveUser(user);
     }
 
